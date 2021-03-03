@@ -1,0 +1,13 @@
+ticket = int(input("Количество билетов:"))
+a = 0
+for i in range(1, ticket + 1):
+    age = int(input('Введите возраст посетителей:'))
+    if 0 <= age < 18:
+        a += 0
+    elif 18 <= age < 25:
+        a += 990
+    elif age >= 25:
+        a += 1390
+print("Стоимость билетов:", a, "руб")
+if ticket > 3:
+    print("Общая сумма со скидкой:", a * 0.9, "руб")
