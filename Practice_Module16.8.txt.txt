@@ -1,0 +1,9 @@
+import math
+
+Area = 0
+Radius = 9
+
+def circle_area():
+    return (Radius ** 2) * math.pi
+Area = circle_area()
+print("Площадь=%.2f" % (Area))
